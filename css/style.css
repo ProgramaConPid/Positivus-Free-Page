@@ -1,0 +1,283 @@
+/* Variables (Fonts and Colors) */
+:root {
+  --font-space-grotesk: "Space Grotesk";
+  --green: #B9FF66;
+  --dark: #191A23;
+  --grey: #F3F3F3;
+  --black: #000000;
+  --white: #fff;
+}
+
+html {
+  font-family: var(--font-space-grotesk);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.navbar {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .navbar__logo {
+  height: 30px;
+  width: 200px;
+}
+
+.navbar__logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar .navbar__links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar__links .navbar__item {
+  color: var(--dark);
+  padding: 15px 25px;
+}
+
+.navbar__item .navbar__link {
+  color: inherit;
+  font-weight: 600;
+}
+
+.navbar__links .navbar__item--modifier {
+  border: 1px solid var(--dark);
+  border-radius: .7rem;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.navbar__item--modifier:hover {
+  color: var(--white);
+  background-color: var(--dark);
+}
+
+/* -- Section Hero Styles -- */
+
+section.hero {
+  padding: 50px 0 80px 0;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 45% 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__texts {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero__texts .hero__texts--title {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+.hero__texts--paragraph {
+  width: 90%;
+  font-size: 18px;
+}
+
+.hero__texts--button {
+  color: var(--white);
+  justify-self: flex-start;
+  display: inline-block;
+  padding: 1.2rem 2rem;
+  font-family: inherit;
+  font-size: 20px;
+  background-color: var(--dark);
+  border: none;
+  border-radius: .7rem;
+  cursor: pointer;
+}
+
+.hero .hero__ilustration {
+  width: min(550px, 90%);
+  margin: 0 auto;
+}
+
+.hero__ilustration .hero__image {
+  width: 100%;
+  height: 100%;
+}
+
+/* -- Section Brands Styles -- */
+
+section.brands {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brands img {
+  filter: grayscale(1);
+  transition: filter 500ms ease;
+}
+
+.brands img:hover {
+  filter: grayscale(0);
+}
+
+/* -- Section Services Styles -- */
+
+section.services {
+  padding: 80px 0;
+}
+
+section.services .services__texts {
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.services__texts .services__title {
+  padding: 5px;
+  font-size: 2rem;
+  background-color: var(--green);
+  border-radius: .4rem;
+}
+
+.services__texts .services__paragraph {
+  width: 45%;
+}
+
+/* Cards */
+
+.services__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 270px;
+  gap: 2rem;
+}
+
+.card {
+  padding: 35px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--black);
+  border-bottom-width: 5px;
+  border-radius: 2rem;
+}
+
+.card__green {
+  background-color: var(--green);
+}
+
+.card__grey {
+  background-color: var(--grey);
+}
+
+.card__dark {
+  background-color: var(--dark);
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__info .card__info--title {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__info--title span {
+  width: max-content;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 3px;
+  border-radius: .3rem;
+}
+
+.card__info--title span.bg__green {
+  background-color: var(--green);
+}
+
+.card__info--title span.bg__grey {
+  background-color: var(--grey);
+}
+
+.card__info--title span.bg__white {
+  background-color: var(--white);
+}
+
+.card .card__info > a {
+  color: var(--dark);
+}
+
+.card__dark .card__info > a {
+  color: var(--white);
+}
+
+.card__info--button {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+ 
+.card > img {
+  height: 160px;
+  width: 150px;
+  margin-right: 25px;
+  margin-block: auto;
+}
+
+/* -- Section CTA Styles -- */
+
+section.cta {
+  height: 350px;
+  padding-left: 50px;
+  background-color: var(--grey);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta__info {
+  width: min(90%, 500px);
+  display: grid;
+  gap: 1.5rem;
+}
+
+.cta__info--title {
+  font-size: 2rem;
+}
+
+.cta__info--paragraph {
+  font-size: 19px;
+}
+
+.cta__info--button {
+  color: var(--white);
+  background-color: var(--dark);
+  padding: 20px 30px;
+  display: inline-block;
+  place-self: flex-start;
+  font-size: 18px;
+  font-family: inherit;
+  border: none;
+  border-radius: .5rem;
+}
