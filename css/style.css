@@ -28,7 +28,7 @@ html {
 
 .navbar {
   background-color: var(--white);
-  height: 120px;
+  height: 100px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -80,7 +80,7 @@ html {
 /* -- Section Hero Styles -- */
 
 section.hero {
-  padding: 120px 0 80px 0;
+  padding: 140px 0 80px 0;
   margin: auto;
   display: grid;
   grid-template-columns: 45% 50%;
@@ -136,6 +136,8 @@ section.brands {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 .brands img {
@@ -296,7 +298,7 @@ section.cta {
 /* Section Case Studies Styles */
 
 section.case__studies {
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 .case__studies--paragraph {
@@ -342,4 +344,79 @@ section.case__studies {
 
 .case__studies--article--button span {
   color: var(--green);
+}
+
+/* -- Section Working Process Styles -- */
+
+.working__process--texts .working__process--paragraph {
+  width: 23%;
+  min-width: min-content;
+}
+
+.container__accordeon {
+  display: grid;
+  gap: 2.5rem;
+}
+
+details.accordeon {
+  padding: 35px;
+  background-color: var(--grey);
+  border-radius: 2rem;
+  border: 1px solid var(--dark);
+  border-bottom-width: 5px;
+
+  --icon-question: url("../assets/icons/plus.png");
+}
+
+.accordeon__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordeon__title::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--dark);
+  background-image: var(--icon-question);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.summary__title {
+  display: grid;
+  grid-auto-flow: column;
+  place-content: center;
+  place-items: center;
+  gap: 2rem;
+}
+
+.summary__title .summary__number {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.summary__title .summary__text {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+details.accordeon[open] {
+  background-color: var(--green);
+  --icon-question: url("../assets/icons/minus.png");
+}
+
+.accordeon__info {
+  margin-top: 1.5rem;
+  padding: 20px 0;
+  border-top: 1px solid var(--dark);
+}
+
+/* -- Section Team -- */
+
+section.team {
+  padding: 100px 0;
 }
