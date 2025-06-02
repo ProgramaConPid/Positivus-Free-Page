@@ -29,8 +29,10 @@
             <img src="./assets/icons/positivus-logo.svg" alt="Positivus Logo" />
           </div>
 
-          <i class='bx  bx-menu-wider' id="hamburguer__menu"></i> 
+          <!-- Icon Mobile -->
+          <i class="bx bx-menu-wider" id="hamburguer__menu"></i>
 
+          <!-- Links -->
           <ul class="navbar__links">
             <li class="navbar__item">
               <a class="navbar__link" href="#">About us</a>
@@ -62,7 +64,11 @@
               Navigating the digital landscape for succes
             </h1>
 
-            <img class="hero__image--mobile" src="./assets/imgs/hero__img.svg" alt="">
+            <img
+              class="hero__image--mobile"
+              src="./assets/imgs/hero__img.svg"
+              alt=""
+            />
 
             <p class="hero__texts--paragraph">
               Our digital marketing agency helps businesses grow and succeed
@@ -565,6 +571,220 @@
           <button class="team__button">See all team</button>
         </div>
       </section>
+
+      <!-- ** -->
+      <!-- Slider Section -->
+      <section class="testimonial">
+        <div class="testimonial__texts flex__texts">
+          <h2 class="testimonial__texts--title title">
+            Testimonials
+          </h2>
+          <p class="testimonial__texts--paragraph paragraph">
+            Hear from Our Satisfied Clients: Read
+            Our Testimonials to Learn More about Our
+            Digital Marketing Services
+          </p>
+        </div>
+
+        <div class="slider__container">
+          <div class="slider">
+            <div class="slide">
+              <div class="slide__content">
+                <div class="slide__text">
+                  <p class="slide__text--paragraph">
+                    "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."
+                  </p>
+                </div>
+                <div class="slide__user">
+                  <span class="slide__user--name">John Smith</span>
+                  <span class="slide__user--ocupation">Marketing Director at XYZ Corp</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide__content">
+                <div class="slide__text">
+                  <p class="slide__text--paragraph">
+                    "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."
+                  </p>
+                </div>
+                <div class="slide__user">
+                  <span class="slide__user--name">Jane Doe</span>
+                  <span class="slide__user--ocupation">CEO at ABC</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+               <div class="slide__content">
+                <div class="slide__text">
+                  <p class="slide__text--paragraph">
+                    "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."
+                  </p>
+                </div>
+                <div class="slide__user">
+                  <span class="slide__user--name">Alice Johnson</span>
+                  <span class="slide__user--ocupation">Owner at 123</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide__content">
+                <div class="slide__text">
+                  <p class="slide__text--paragraph">
+                    "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."
+                  </p>
+                </div>
+                <div class="slide__user">
+                  <span class="slide__user--name">Bob Brown</span>
+                  <span class="slide__user--ocupation">Director at XYZ</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide__content">
+                <div class="slide__text">
+                  <p class="slide__text--paragraph">
+                    "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."
+                  </p>
+                </div>
+                <div class="slide__user">
+                  <span class="slide__user--name">Gupta Patel</span>
+                  <span class="slide__user--ocupation">Content Creator</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide__content">
+                <div class="slide__text">
+                  <p class="slide__text--paragraph">
+                    "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."
+                  </p>
+                </div>
+                <div class="slide__user">
+                  <span class="slide__user--name">Sara Johnson</span>
+                  <span class="slide__user--ocupation">Freelancer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider__controls">
+            <button onclick="prevSlide()">&#10094;</button>
+            <button onclick="nextSlide()">&#10095;</button>
+          </div>
+
+          <div class="slider__dots"></div>
+        </div>
+      
+      </section>
+      <!-- **  -->
+
+      <!-- Contact Section -->
+      <section class="contact">
+        <div class="contact__texts flex__texts">
+          <h2 class="contact__texts--title title">Contacto</h2>
+          <p class="contact__texts--paragraph paragraph">
+            Connect with Us: Let's Discuss Your Digital Marketing Needs
+          </p>
+        </div>
+
+        <div class="contact__content">
+          <!-- Form -->
+          <form class="contact__form" autocomplete="off">
+            <div class="form__group--radio">
+              <input type="radio" name="radio" id="first" checked />
+              <label for="first" class="label__radio">Say Hi</label>
+
+              <input type="radio" name="radio" id="second" />
+              <label for="second" class="label__radio">Get a Quote</label>
+            </div>
+
+            <div class="form__group--content">
+              <div class="group__name group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required placeholder="Name" />
+              </div>
+              <div class="group__email group">
+                <label for="email">Email*</label>
+                <input type="text" id="email" required placeholder="Email" />
+              </div>
+              <div class="group__message group">
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="form__button">Send Message</button>
+            </div>
+          </form>
+          <!-- Form Image -->
+          <img
+            class="form__img"
+            src="./assets/imgs/form__img.webp"
+            alt="Form Image"
+          />
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="footer__grid">
+          <img class="footer__logo" src="./assets/icons/positivus-logo-white.svg" alt="" />
+          <div class="footer__links">
+            <a href="#">About us</a>
+            <a href="#">Services</a>
+            <a href="#">Use Cases</a>
+            <a href="#">Pricing</a>
+            <a class="blog" href="#">Blog</a>
+          </div>
+          <div class="footer__social">
+            <a href="#">
+              <img
+                class="footer__social--logo"
+                src="./assets/icons/logo__facebook.svg"
+                alt=""
+              />
+            </a>
+            <a href="#">
+              <img
+                class="footer__social--logo"
+                src="./assets/icons/logo__linkedin.svg"
+                alt=""
+              />
+            </a>
+            <a href="#">
+              <img
+                class="footer__social--logo"
+                src="./assets/icons/logo__twitter.svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="footer__contact">
+            <h3 class="footer__contact--title">Contact us:</h3>
+            <p class="footer__contact--email">Email: info@positivus.com</p>
+            <p class="footer__contact--phone">Phone: 555-567-8901</p>
+            <div class="footer__contact--address">
+              <p>Address: 1234 Main St</p>
+              <p>Moonstone City, Stardust State 12345</p>
+            </div>
+          </div>
+          <div class="footer__input">
+            <input class="footer__input--email" type="email" placeholder="Email" />
+            <button class="footer__input--button" type="submit">Subscribe to news</button>
+          </div>
+        </div>
+        <div class="footer__copy">
+          <span>&copy; 2023 Positivus. All Rights Reserved.</span>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </footer>
     </div>
+
+    <!-- JS File -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
